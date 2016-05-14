@@ -7,8 +7,28 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 			<div class="container">
 				<div class="footer-copyright">
 					2016 Клубный поселок “Княжий Бор”
+					<?$APPLICATION->IncludeComponent(
+						'bitrix:main.include',
+						'',
+						Array(
+							'AREA_FILE_SHOW' => 'file',
+							'PATH' => '/local/include/site_templates/ft_footer_copyright.php',
+							'EDIT_TEMPLATE' => ''
+						),
+						false
+					);?>
 				</div>
 				<div class="footer-developer">
+					<?$APPLICATION->IncludeComponent(
+						'bitrix:main.include',
+						'',
+						Array(
+							'AREA_FILE_SHOW' => 'file',
+							'PATH' => '/local/include/site_templates/ft_footer_developer.php',
+							'EDIT_TEMPLATE' => ''
+						),
+						false
+					);?>
 					<a href="http://yalstudio.ru" class="footer-developer__link" title="Создание сайтов - Студия ЯЛ">Создание сайтов - Студия ЯЛ</a>
 				</div>
 			</div>
@@ -17,6 +37,16 @@ if (!defined('B_PROLOG_INCLUDED') || B_PROLOG_INCLUDED !== true) {
 			<div class="call-request-form" id="call-request">
 				<div class="call-request-form__wrap">
 					<div class="call-request-form__inner">
+						<?$APPLICATION->IncludeComponent(
+							'bitrix:main.include',
+							'',
+							Array(
+								'AREA_FILE_SHOW' => 'file',
+								'PATH' => '/local/include/site_templates/ft_call_request_form_3.php',
+								'EDIT_TEMPLATE' => ''
+							),
+							false
+						);?>
 						<div class="form__header">
 							Оставьте заявку на просмотр особняка
 						</div>

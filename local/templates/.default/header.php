@@ -43,11 +43,35 @@ IncludeTemplateLangFile(__FILE__);
 			<div class="container">
 				<div class="header-text">
 					Особняк, который подчеркнет ваш статус
+					<?$APPLICATION->IncludeComponent('bitrix:main.include', '',
+						Array(
+							'AREA_FILE_SHOW' => 'file',
+							'PATH' => '/local/include/site_templates/hd_header_text.php',
+							'EDIT_TEMPLATE' => ''
+						),
+						false
+					);?>
 				</div>
 				<div class="header-contacts">
 					+7 (495) 540-51-00, +7 (495) 215-11- 44
+					<?$APPLICATION->IncludeComponent('bitrix:main.include', '',
+						Array(
+							'AREA_FILE_SHOW' => 'file',
+							'PATH' => '/local/include/site_templates/hd_header_phone.php',
+							'EDIT_TEMPLATE' => ''
+						),
+						false
+					);?>
 				</div>
 				<div class="header-logo">
+					<?$APPLICATION->IncludeComponent('bitrix:main.include', '',
+						Array(
+							'AREA_FILE_SHOW' => 'file',
+							'PATH' => '/local/include/site_templates/hd_header_logo.php',
+							'EDIT_TEMPLATE' => ''
+						),
+						false
+					);?>
 					<img class="header-logo__img" src="<?=SITE_TEMPLATE_PATH?>/pictures/logo.png" alt="">
 				</div>
 			</div>
@@ -58,6 +82,14 @@ IncludeTemplateLangFile(__FILE__);
 					<div class="promo">
 						<div class="promo__wrap">
 							<div class="promo__inner">
+								<?$APPLICATION->IncludeComponent('bitrix:main.include', '',
+									Array(
+										'AREA_FILE_SHOW' => 'file',
+										'PATH' => '/local/include/site_templates/hd_section_promo_text.php',
+										'EDIT_TEMPLATE' => ''
+									),
+									false
+								);?>
 								<h1 class="section__header">Продётся лучший особняк посёлка</h1>
                                 <span class="promo__text">
                                       + 46.6 соток земли
@@ -74,11 +106,37 @@ IncludeTemplateLangFile(__FILE__);
 			<section class="section section-advantages">
 				<div class="container">
 					<div class="advantages">
+						<?$APPLICATION->IncludeComponent('bitrix:main.include', '',
+							Array(
+								'AREA_FILE_SHOW' => 'file',
+								'PATH' => '/local/include/site_templates/hd_section_advantages_header.php',
+								'EDIT_TEMPLATE' => ''
+							),
+							false
+						);?>
 						<h2 class="section__header">Всего 20 минут и вы дома</h2>
+						<?$APPLICATION->IncludeComponent('bitrix:main.include', '',
+							Array(
+								'AREA_FILE_SHOW' => 'file',
+								'PATH' => '/local/include/site_templates/hd_section_advantages_list.php',
+								'EDIT_TEMPLATE' => ''
+							),
+							false
+						);?>
 						<ul class="advantages__list">
 							<li class="advantages__item">
 								<div class="advantages__wrap">
 									<div class="advantages__inner">
+										<?$APPLICATION->IncludeComponent(
+											'bitrix:main.include',
+											'',
+											Array(
+												'AREA_FILE_SHOW' => 'file',
+												'PATH' => '/local/include/site_templates/hd_section_advantages_item_1.php',
+												'EDIT_TEMPLATE' => ''
+											),
+											false
+										);?>
 										<div class="advantages__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/advantages/icon-advantages-1.png" alt="">
 										</div>
@@ -95,6 +153,16 @@ IncludeTemplateLangFile(__FILE__);
 							<li class="advantages__item">
 								<div class="advantages__wrap">
 									<div class="advantages__inner">
+										<?$APPLICATION->IncludeComponent(
+											'bitrix:main.include',
+											'',
+											Array(
+												'AREA_FILE_SHOW' => 'file',
+												'PATH' => '/local/include/site_templates/hd_section_advantages_item_2.php',
+												'EDIT_TEMPLATE' => ''
+											),
+											false
+										);?>
 										<div class="advantages__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/advantages/icon-advantages-2.png" alt="">
 										</div>
@@ -112,6 +180,16 @@ IncludeTemplateLangFile(__FILE__);
 							<li class="advantages__item">
 								<div class="advantages__wrap">
 									<div class="advantages__inner">
+										<?$APPLICATION->IncludeComponent(
+											'bitrix:main.include',
+											'',
+											Array(
+												'AREA_FILE_SHOW' => 'file',
+												'PATH' => '/local/include/site_templates/hd_section_advantages_item_3.php',
+												'EDIT_TEMPLATE' => ''
+											),
+											false
+										);?>
 										<div class="advantages__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/advantages/icon-advantages-3.png" alt="">
 										</div>
@@ -128,6 +206,16 @@ IncludeTemplateLangFile(__FILE__);
 							<li class="advantages__item">
 								<div class="advantages__wrap">
 									<div class="advantages__inner">
+										<?$APPLICATION->IncludeComponent(
+											'bitrix:main.include',
+											'',
+											Array(
+												'AREA_FILE_SHOW' => 'file',
+												'PATH' => '/local/include/site_templates/hd_section_advantages_item_4.php',
+												'EDIT_TEMPLATE' => ''
+											),
+											false
+										);?>
 										<div class="advantages__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/advantages/icon-advantages-4.png" alt="">
 										</div>
@@ -151,6 +239,16 @@ IncludeTemplateLangFile(__FILE__);
 						<h2 class="section__header">Лучшее предложение 2016 года</h2>
 						<div class="offer-info">
 							<div class="offer-info__left">
+								<?$APPLICATION->IncludeComponent(
+									'bitrix:main.include',
+									'',
+									Array(
+										'AREA_FILE_SHOW' => 'file',
+										'PATH' => '/local/include/site_templates/hd_offer_info_left.php',
+										'EDIT_TEMPLATE' => ''
+									),
+									false
+								);?>
 								<ul class="offer-info__list">
 									<li class="offer-info__item">
 										<div class="offer-info__img-wrap">
@@ -160,7 +258,6 @@ IncludeTemplateLangFile(__FILE__);
 											4 ванных комнаты
 										</div>
 									</li>
-
 									<li class="offer-info__item">
 										<div class="offer-info__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/offer/icon-offer-2.png" alt="">
@@ -169,7 +266,6 @@ IncludeTemplateLangFile(__FILE__);
 											2 кухни
 										</div>
 									</li>
-
 									<li class="offer-info__item">
 										<div class="offer-info__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/offer/icon-offer-3.png" alt="">
@@ -178,7 +274,6 @@ IncludeTemplateLangFile(__FILE__);
 											гараж на 4 машины
 										</div>
 									</li>
-
 									<li class="offer-info__item">
 										<div class="offer-info__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/offer/icon-offer-4.png" alt="">
@@ -187,7 +282,6 @@ IncludeTemplateLangFile(__FILE__);
 											2 гостиные
 										</div>
 									</li>
-
 									<li class="offer-info__item">
 										<div class="offer-info__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/offer/icon-offer-5.png" alt="">
@@ -196,7 +290,6 @@ IncludeTemplateLangFile(__FILE__);
 											5 спалень
 										</div>
 									</li>
-
 									<li class="offer-info__item">
 										<div class="offer-info__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/offer/icon-offer-6.png" alt="">
@@ -205,7 +298,6 @@ IncludeTemplateLangFile(__FILE__);
 											спортзал
 										</div>
 									</li>
-
 									<li class="offer-info__item">
 										<div class="offer-info__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/offer/icon-offer-7.png" alt="">
@@ -214,7 +306,6 @@ IncludeTemplateLangFile(__FILE__);
 											бассейн
 										</div>
 									</li>
-
 									<li class="offer-info__item">
 										<div class="offer-info__img-wrap">
 											<img src="<?=SITE_TEMPLATE_PATH?>/pictures/offer/icon-offer-8.png" alt="">
@@ -226,6 +317,16 @@ IncludeTemplateLangFile(__FILE__);
 								</ul>
 							</div>
 							<div class="offer-info__right">
+								<?$APPLICATION->IncludeComponent(
+									'bitrix:main.include',
+									'',
+									Array(
+										'AREA_FILE_SHOW' => 'file',
+										'PATH' => '/local/include/site_templates/hd_offer_info_right.php',
+										'EDIT_TEMPLATE' => ''
+									),
+									false
+								);?>
 								<div class="offer-info__text">
 									<h3>
 										Площадь 659,6 м2<br>
@@ -276,6 +377,16 @@ IncludeTemplateLangFile(__FILE__);
 							<a href="#call-request" class="btn btn_yellow btn_lg js__popUp">Записаться на просмотр</a>
 						</div>
 						<div class="offer-gallery">
+							<?$APPLICATION->IncludeComponent(
+								'bitrix:main.include',
+								'',
+								Array(
+									'AREA_FILE_SHOW' => 'file',
+									'PATH' => '/local/include/site_templates/hd_offer_gallery.php',
+									'EDIT_TEMPLATE' => ''
+								),
+								false
+							);?>
 							<ul class="offer-gallery__list">
 								<li class="offer-gallery__item">
 									<a href="<?=SITE_TEMPLATE_PATH?>/pictures/gallery/photo-1.jpg" class="offer-gallery__link fancybox" rel="gallery">
@@ -369,10 +480,40 @@ IncludeTemplateLangFile(__FILE__);
 			<section class="section section-about">
 				<div class="container">
 					<div class="about">
+						<?$APPLICATION->IncludeComponent(
+							'bitrix:main.include',
+							'',
+							Array(
+								'AREA_FILE_SHOW' => 'file',
+								'PATH' => '/local/include/site_templates/hd_about_h2.php',
+								'EDIT_TEMPLATE' => ''
+							),
+							false
+						);?>
 						<h2 class="section__header">Уютное место для семьи и друзей</h2>
 						<div class="about-place">
+							<?$APPLICATION->IncludeComponent(
+								'bitrix:main.include',
+								'',
+								Array(
+									'AREA_FILE_SHOW' => 'file',
+									'PATH' => '/local/include/site_templates/hd_about_place_list.php',
+									'EDIT_TEMPLATE' => ''
+								),
+								false
+							);?>
 							<ul class="about-place__list">
 								<li class="about-place__item">
+									<?$APPLICATION->IncludeComponent(
+										'bitrix:main.include',
+										'',
+										Array(
+											'AREA_FILE_SHOW' => 'file',
+											'PATH' => '/local/include/site_templates/hd_about_place_item_1.php',
+											'EDIT_TEMPLATE' => ''
+										),
+										false
+									);?>
 									<div class="about-place__img-wrap">
 										<img src="<?=SITE_TEMPLATE_PATH?>/pictures/place/place-1.jpg" alt="" />
 									</div>
@@ -383,8 +524,17 @@ IncludeTemplateLangFile(__FILE__);
 										хоз/назначения (кладовая), с/у.
 									</div>
 								</li>
-
 								<li class="about-place__item">
+									<?$APPLICATION->IncludeComponent(
+										'bitrix:main.include',
+										'',
+										Array(
+											'AREA_FILE_SHOW' => 'file',
+											'PATH' => '/local/include/site_templates/hd_about_place_item_2.php',
+											'EDIT_TEMPLATE' => ''
+										),
+										false
+									);?>
 									<div class="about-place__img-wrap">
 										<img src="<?=SITE_TEMPLATE_PATH?>/pictures/place/place-2.jpg" alt="" />
 									</div>
@@ -393,8 +543,17 @@ IncludeTemplateLangFile(__FILE__);
 										с выходом на террасу, спальня, гардеробная, прихожая, кухня-столовая, гардеробная, спортзал.
 									</div>
 								</li>
-
 								<li class="about-place__item">
+									<?$APPLICATION->IncludeComponent(
+										'bitrix:main.include',
+										'',
+										Array(
+											'AREA_FILE_SHOW' => 'file',
+											'PATH' => '/local/include/site_templates/hd_about_place_item_3.php',
+											'EDIT_TEMPLATE' => ''
+										),
+										false
+									);?>
 									<div class="about-place__img-wrap">
 										<img src="<?=SITE_TEMPLATE_PATH?>/pictures/place/place-3.jpg" alt="" />
 									</div>
@@ -410,6 +569,16 @@ IncludeTemplateLangFile(__FILE__);
 							<div class="call-request-form__wrap">
 								<div class="call-request-form__inner">
 									<div class="form-request">
+										<?$APPLICATION->IncludeComponent(
+											'bitrix:main.include',
+											'',
+											Array(
+												'AREA_FILE_SHOW' => 'file',
+												'PATH' => '/local/include/site_templates/hd_section_request_form_1.php',
+												'EDIT_TEMPLATE' => ''
+											),
+											false
+										);?>
 										<div class="form__header">
 											Приезжайте и лично оцените<br>
 											ваш новый роскошный дом
@@ -435,6 +604,16 @@ IncludeTemplateLangFile(__FILE__);
 						</div>
 					</div>
 					<div class="about-landscape">
+						<?$APPLICATION->IncludeComponent(
+							'bitrix:main.include',
+							'',
+							Array(
+								'AREA_FILE_SHOW' => 'file',
+								'PATH' => '/local/include/site_templates/hd_about_landscape_h2_img.php',
+								'EDIT_TEMPLATE' => ''
+							),
+							false
+						);?>
 						<h2>Поселок с современной инфраструктурой</h2>
 						<figure>
 							<img src="<?=SITE_TEMPLATE_PATH?>/pictures/landscape_03.jpg" alt="">
@@ -443,6 +622,16 @@ IncludeTemplateLangFile(__FILE__);
 
 						<div class="about-landscape__content">
 							<div class="about-landscape__descr">
+								<?$APPLICATION->IncludeComponent(
+									'bitrix:main.include',
+									'',
+									Array(
+										'AREA_FILE_SHOW' => 'file',
+										'PATH' => '/local/include/site_templates/hd_about_landscape_descr.php',
+										'EDIT_TEMPLATE' => ''
+									),
+									false
+								);?>
 								<table>
 									<tr>
 										<td>
@@ -460,6 +649,16 @@ IncludeTemplateLangFile(__FILE__);
 								</table>
 							</div>
 							<div class="about-landscape-text">
+								<?$APPLICATION->IncludeComponent(
+									'bitrix:main.include',
+									'',
+									Array(
+										'AREA_FILE_SHOW' => 'file',
+										'PATH' => '/local/include/site_templates/hd_about_landscape_text.php',
+										'EDIT_TEMPLATE' => ''
+									),
+									false
+								);?>
 								<ul>
 									<li>
 										Освещение, газоны
@@ -479,9 +678,29 @@ IncludeTemplateLangFile(__FILE__);
 			<section class="section section-area">
 				<div class="container">
 					<div class="area">
+						<?$APPLICATION->IncludeComponent(
+							'bitrix:main.include',
+							'',
+							Array(
+								'AREA_FILE_SHOW' => 'file',
+								'PATH' => '/local/include/site_templates/hd_section_area_h2.php',
+								'EDIT_TEMPLATE' => ''
+							),
+							false
+						);?>
 						<h2 class="section__header">Просторный участок, который не хочется покидать</h2>
 						<div class="area__wrap">
 							<div class="area-gallery">
+								<?$APPLICATION->IncludeComponent(
+									'bitrix:main.include',
+									'',
+									Array(
+										'AREA_FILE_SHOW' => 'file',
+										'PATH' => '/local/include/site_templates/hd_section_area_gallery_list.php',
+										'EDIT_TEMPLATE' => ''
+									),
+									false
+								);?>
 								<ul class="area-gallery__list">
 									<li class="area-gallery__item">
 										<a href="<?=SITE_TEMPLATE_PATH?>/pictures/area/area-1.jpg" class="area-gallery__link fancybox" rel="gallery-2">
@@ -528,9 +747,29 @@ IncludeTemplateLangFile(__FILE__);
 								</ul>
 							</div>
 							<div class="area__text">
+								<?$APPLICATION->IncludeComponent(
+									'bitrix:main.include',
+									'',
+									Array(
+										'AREA_FILE_SHOW' => 'file',
+										'PATH' => '/local/include/site_templates/hd_section_area_text_h3.php',
+										'EDIT_TEMPLATE' => ''
+									),
+									false
+								);?>
 								<h3>
 									Большой ухоженный лесной участок
 								</h3>
+								<?$APPLICATION->IncludeComponent(
+									'bitrix:main.include',
+									'',
+									Array(
+										'AREA_FILE_SHOW' => 'file',
+										'PATH' => '/local/include/site_templates/hd_section_area_text_ul.php',
+										'EDIT_TEMPLATE' => ''
+									),
+									false
+								);?>
 								<ul>
 									<li>
 										На участке отдельно стоящая баня- 65 кв.м. Комната отдыха, столовая, кухней
@@ -548,10 +787,30 @@ IncludeTemplateLangFile(__FILE__);
 			<section class="section section-infrastructure">
 				<div class="container">
 					<div class="infrastructure">
+						<?$APPLICATION->IncludeComponent(
+							'bitrix:main.include',
+							'',
+							Array(
+								'AREA_FILE_SHOW' => 'file',
+								'PATH' => '/local/include/site_templates/hd_section_infrastructure_h2.php',
+								'EDIT_TEMPLATE' => ''
+							),
+							false
+						);?>
 						<h2 class="section__header">
 							В поселке предусмотрена вся инфраструктура<br>
 							необходимая для постоянного проживания
 						</h2>
+						<?$APPLICATION->IncludeComponent(
+							'bitrix:main.include',
+							'',
+							Array(
+								'AREA_FILE_SHOW' => 'file',
+								'PATH' => '/local/include/site_templates/hd_section_infrastructure_list.php',
+								'EDIT_TEMPLATE' => ''
+							),
+							false
+						);?>
 						<ul class="infrastructure__list">
 							<li class="infrastructure__item">
 								<div class="infrastructure__img-wrap">
@@ -656,6 +915,16 @@ IncludeTemplateLangFile(__FILE__);
 						<div class="call-request-form">
 							<div class="call-request-form__wrap">
 								<div class="call-request-form__inner">
+									<?$APPLICATION->IncludeComponent(
+										'bitrix:main.include',
+										'',
+										Array(
+											'AREA_FILE_SHOW' => 'file',
+											'PATH' => '/local/include/site_templates/hd_section_request_form_2.php',
+											'EDIT_TEMPLATE' => ''
+										),
+										false
+									);?>
 									<div class="form__header">
 										Оставьте заявку на просмотр особняка
 									</div>
