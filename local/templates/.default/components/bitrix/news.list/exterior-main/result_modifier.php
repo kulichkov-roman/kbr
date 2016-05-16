@@ -1,9 +1,7 @@
 <?if(!defined("B_PROLOG_INCLUDED") || B_PROLOG_INCLUDED!==true)die();?>
 
 <?
-$environment = \Quetzal\Environment\EnvironmentManager::getInstance();
-
-//echo "<pre>"; var_dump($arResult['ITEMS']); echo "</pre>";
+$environment = \Your\Environment\EnvironmentManager::getInstance();
 
 $arIds = array();
 foreach($arResult['ITEMS'] as &$arItem)
@@ -34,8 +32,10 @@ if(sizeof($arIds) > 0)
     while($arItem = $rsFile->GetNext())
     {
         $arPreviewPicture[$arItem['ID']] = $arItem;
-        $urlPreviewPicture = itc\Resizer::get($arItem['ID'], 'projectsPreview');
-        $urlDetailPicture = itc\Resizer::get($arItem['ID'], 'projectsDetail');
+        $arDetailPicture[$arItem["ID"]] = $arItem;
+
+        $urlPreviewPicture = \itc\Resizer::get($arItem['ID'], 'exteriorPreview');
+        $urlDetailPicture = \itc\Resizer::get($arItem['ID'], 'exteriorDetail');
 
         $arPreviewPicture[$arItem['ID']]['SRC'] = $urlPreviewPicture;
         $arDetailPicture[$arItem['ID']]['SRC'] = $urlDetailPicture;
@@ -50,8 +50,8 @@ if(sizeof($arIds) > 0)
         }
         else
         {
-            $arItem['PREVIEW_PICTURE']['SRC'] = itc\Resizer::get($environment->get('projectsPlugId'), 'projectsPreview');
-            $arItem['DETAIL_PICTURE']['SRC'] = itc\Resizer::get($environment->get('projectsPlugId'), 'projectsDetail');
+            $arItem['PREVIEW_PICTURE']['SRC'] = \itc\Resizer::get($environment->get('exteriorPlugId'), 'exteriorPreview');
+            $arItem['DETAIL_PICTURE']['SRC'] = \itc\Resizer::get($environment->get('exteriorPlugId'), 'exteriorDetail');
         }
     }
     unset($arItem);
@@ -60,8 +60,8 @@ else
 {
     foreach($arResult['ITEMS'] as &$arItem)
     {
-        $arItem['PREVIEW_PICTURE']['SRC'] = itc\Resizer::get($environment->get('projectsPlugId'), 'projectsPreview');
-        $arItem['DETAIL_PICTURE']['SRC'] = itc\Resizer::get($environment->get('projectsPlugId'), 'projectsDetail');
+        $arItem['PREVIEW_PICTURE']['SRC'] = \itc\Resizer::get($environment->get('exteriorPlugId'), 'exteriorPreview');
+        $arItem['DETAIL_PICTURE']['SRC'] = \itc\Resizer::get($environment->get('exteriorPlugId'), 'exteriorDetail');
     }
     unset($arItem);
 }
