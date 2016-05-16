@@ -1,9 +1,9 @@
 <?php
 
-namespace MLTK;
+namespace KBR;
 
 /**
- * Автозагрузчик для пространства MLTK
+ * Автозагрузчик для пространства KBR
  *
  * Class AutoLoader
  *
@@ -15,7 +15,7 @@ class AutoLoader
 {
 	const DEBUG_MODE = false;
 
-	const PROJECT_NAMESPACE = 'MLTK';
+	const PROJECT_NAMESPACE = 'KBR';
 
 	static private $recursiveSearch = true;
 

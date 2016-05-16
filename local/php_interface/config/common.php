@@ -5,10 +5,8 @@
 \Your\Environment\EnvironmentManager::getInstance()->addConfig(
 	new \Your\Environment\Configuration\CommonConfiguration(
 		array(
-			/**
-			 *
-			 */
-			'newsIBlockId' => 6,
+			'interiorIBlockId' => 1,
+			'exteriorIBlockId' => 2,
 		)
 	)
 );
