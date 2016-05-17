@@ -7,6 +7,8 @@
 		array(
 			'interiorIBlockId' => 1,
 			'exteriorIBlockId' => 2,
+			'feedbackIBlockId' => 3,
+			'feedbackPropPhoneId' => 1,
 		)
 	)
 );

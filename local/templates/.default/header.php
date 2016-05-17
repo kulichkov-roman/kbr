@@ -241,7 +241,8 @@ IncludeTemplateLangFile(__FILE__);
 												'PATH' => '/local/include/site_templates/hd_section_request_form_1.php',
 												'EDIT_TEMPLATE' => ''
 											),
-											false
+											false,
+											Array('HIDE_ICONS' => 'Y')
 										);?>
 									</div>
 								</div>
@@ -387,7 +388,8 @@ IncludeTemplateLangFile(__FILE__);
 											'PATH' => '/local/include/site_templates/hd_section_request_form_2.php',
 											'EDIT_TEMPLATE' => ''
 										),
-										false
+										false,
+										Array('HIDE_ICONS' => 'Y')
 									);?>
 								</div>
 							</div>
