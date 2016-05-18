@@ -101,9 +101,10 @@ $(document).ready(function() {
         var contentString = 
             '<div id="map-content">' +
                 '<div class="map__inner">' +
-                    '<div class="map__title">Адрес офиса:</div>' +
-                    '<div class="map__text">119049, г. Москва,<br> Крымский вал д.3, стр. 2 (оф. 301)</div>' +
-                    '<div class="map__phone">+7 (495) 540-51-00<br> +7 (495) 215-11-44</div>' +
+                    '<div class="map__title">Владелец:</div>' +
+                    '<div class="map__text">Моисеев Максим</div>' +
+                    '<div class="map__text">artde@inbo.ru</div>' +
+                    '<div class="map__phone">+7(985) 762-00-05</div>' +
                 '</div>' +
             '</div>';
         
