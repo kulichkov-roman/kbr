@@ -89,7 +89,7 @@ $(document).ready(function() {
         var myOptions = {
             zoom: 17,
             center: myLatlng,
-            mapTypeId: ['google.maps.MapTypeId.ROADMAP', 'map_style'],
+            mapTypeId: 'map_style',
             scrollwheel: false,
             disableDefaultUI: true
         };
