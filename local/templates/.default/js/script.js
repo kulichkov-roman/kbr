@@ -102,7 +102,7 @@ $(document).ready(function() {
             '<div id="map-content">' +
                 '<div class="map__inner">' +
                     '<div class="map__title">Владелец:</div>' +
-                    '<div class="map__text">Моисеев Максим</div>' +
+                    '<div class="map__text">Екатерина</div>' +
                     '<div class="map__text">artde@inbox.ru</div>' +
                     '<div class="map__phone">+7(985) 762-00-05</div>' +
                 '</div>' +
